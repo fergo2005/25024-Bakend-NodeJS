@@ -1,7 +1,7 @@
 import userService from "../services/users.services.js";
 
 const getAllUsers = (req, res) => {
-  const users = userService.getAllUsers();
+  const users = userService.getAllUsers(); 
   res.status(200).json(users);
 };
 
@@ -22,14 +22,25 @@ const createUser = (req, res) => {
       .json({ message: "Error interno del servidor", error: error.message });
   }
 };
+
+//viene del router para trabajarse y vuelve como variable al exportar
+/* (req, res) => {
+    res.status(200).json({message:"Usuario actualizado con éxito"})
+} */
+
 const updateUser = (req, res) => {
-  const { id } = req.params;
-  const { name } = req.body;
+  const { id } = req.params;  //desestructuramos
+  const { name } = req.body;  
   try {
     if (!id) {
-      return res.status(400).json({ message: "El ID es requerido" });
+      return res
+      .status(400)
+      .json({ message: "El ID es requerido" });
     }
-    const user = userService.updateUser(id, name);
+    //servicio que hace el update
+    //
+
+    const user = userService.updateUser(id, name); //updateUser null || 
     console.log(user);
 
     if (!user) {
@@ -55,12 +66,13 @@ const getUserById = (req, res) => {
     if (!user) {
       return res.status(404).json({ message: "Usuario no encontrado" });
     }
-    res.status(200).json({ payload: user });
+    res.status(200).json({ payload: user }); //por convencion payload parte util de la respuesta
   } catch (error) {
     res
-      .status(500)
-      .json({ message: "Error interno del servidor", error: error.message });
+    .status(500)
+    .json({ message: "Error interno del servidor", error: error.message });
   }
 };
 
 export default { getAllUsers, createUser, updateUser ,getUserById};
+ 

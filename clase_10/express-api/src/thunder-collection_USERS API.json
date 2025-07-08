@@ -1,0 +1,100 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "USERS API",
+    "collectionId": "464a9601-36ac-4d7f-942f-6d42c2b806a9",
+    "dateExported": "2025-06-09T19:41:52.878Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "aeab42c1-5d4a-4881-a303-815b34560353",
+            "colId": "464a9601-36ac-4d7f-942f-6d42c2b806a9",
+            "containerId": "",
+            "name": "SeedUsers",
+            "url": "http://localhost:5000/api/users/seed-users?count=30",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2025-06-09T19:40:13.465Z",
+            "modified": "2025-06-09T19:40:13.465Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "count",
+                    "value": "30",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "09869ee4-01ff-4682-b261-c3b176f4431f",
+            "colId": "464a9601-36ac-4d7f-942f-6d42c2b806a9",
+            "containerId": "",
+            "name": "GetUsers",
+            "url": "http://localhost:5000/api/users/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-06-09T19:39:56.029Z",
+            "modified": "2025-06-09T19:39:56.029Z",
+            "headers": []
+        },
+        {
+            "_id": "40f36b8a-f6ff-4db6-bf34-c1407e76dfec",
+            "colId": "464a9601-36ac-4d7f-942f-6d42c2b806a9",
+            "containerId": "",
+            "name": "GetUsersById",
+            "url": "http://localhost:5000/api/users/f2629ddc-8acb-44ce-8ca6-4f1aa726ab25",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-06-09T19:40:37.773Z",
+            "modified": "2025-06-09T19:40:37.773Z",
+            "headers": []
+        },
+        {
+            "_id": "178b5e76-891b-430a-8430-977abc3e717d",
+            "colId": "464a9601-36ac-4d7f-942f-6d42c2b806a9",
+            "containerId": "",
+            "name": "CreateUser",
+            "url": "http://localhost:5000/api/users/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-06-09T19:40:23.543Z",
+            "modified": "2025-06-09T19:40:23.543Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Lorenzo\",\n  \"email\": \"lorenzo@mail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f87558f4-695d-473b-a426-e846e38d3e11",
+            "colId": "464a9601-36ac-4d7f-942f-6d42c2b806a9",
+            "containerId": "",
+            "name": "UpdateUser",
+            "url": "http://localhost:5000/api/users/6ab5e6b1-0540--9948-93e2ceab492a",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-06-09T19:40:31.648Z",
+            "modified": "2025-06-09T19:40:31.648Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Lorenzo\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "395c8e84-57f8-47a9-9571-77671203800f",
+            "colId": "464a9601-36ac-4d7f-942f-6d42c2b806a9",
+            "containerId": "",
+            "name": "DeleteUser",
+            "url": "http://localhost:5000/api/users/6d201fe9-78f6-44fe-8252-9c42f7e1c313",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2025-06-09T19:40:50.445Z",
+            "modified": "2025-06-09T19:40:50.445Z",
+            "headers": []
+        }
+    ],
+    "ref": "XKWv-nexcnArWztnGp6U-azJXvA-0F03KwZ-DSvxVL3oohqEJS54itDoX7kFYCIxlk-sANae5Va3WaK_D4R9sQ"
+}

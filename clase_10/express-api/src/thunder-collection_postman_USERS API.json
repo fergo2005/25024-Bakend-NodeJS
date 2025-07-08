@@ -1,0 +1,147 @@
+{
+    "info": {
+        "_postman_id": "46d18dd6-fb9b-4fb5-a04a-9f8f07d1c707",
+        "name": "USERS API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "SeedUsers",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/users/seed-users?count=30",
+                    "query": [
+                        {
+                            "key": "count",
+                            "value": "30"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api",
+                        "users",
+                        "seed-users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "GetUsers",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/users/",
+                    "path": [
+                        "api",
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "GetUsersById",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/users/f2629ddc-8acb-44ce-8ca6-4f1aa726ab25",
+                    "path": [
+                        "api",
+                        "users",
+                        "f2629ddc-8acb-44ce-8ca6-4f1aa726ab25"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "CreateUser",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/api/users/",
+                    "path": [
+                        "api",
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Alex\",\n  \"email\": \"alex@mail.com\"\n}"
+                }
+            }
+        },
+        {
+            "name": "UpdateUser",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/api/users/6ab5e6b1-0540--9948-93e2ceab492a",
+                    "path": [
+                        "api",
+                        "users",
+                        "6ab5e6b1-0540--9948-93e2ceab492a"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Lorenzo\"\n}"
+                }
+            }
+        },
+        {
+            "name": "DeleteUser",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:5000/api/users/6d201fe9-78f6-44fe-8252-9c42f7e1c313",
+                    "path": [
+                        "api",
+                        "users",
+                        "6d201fe9-78f6-44fe-8252-9c42f7e1c313"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ]
+}
